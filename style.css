@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background: #111;
+  position: relative;
+}
+
+.main-container .image-container {
+  /* flex: 1; */
+  height: 100%;
+
+  position: fixed;
+  width: 100%;
+}
+
+.main-container .photo {
+  font-family: "Raleway", sans-serif;
+  z-index: 100;
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+ font-weight: bold;
+ border: none;
+  
+}
+input{
+  height: 30px;
+  margin-right: 15px;
+  width: 30%;
+  border-radius: 5px;
+}
+button{
+  height: 40px;
+  color: black;
+  background-color: rgb(237, 229, 82);
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.booking{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  height: 5vh;
+  background-color: rgb(6, 18, 49);
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50vw;
+}
+.round{
+  background-color: rgb(6, 18, 49);
+  width: 50px;
+  color: white;
+  display: flex;
+  font-size: 2rem;
+  font-weight: bolder;
+  z-index: -1;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  top:-23px;
+}
