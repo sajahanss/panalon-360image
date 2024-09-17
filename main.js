@@ -18,7 +18,7 @@ panoramaImage = new PANOLENS.ImagePanorama(images[selector.selectedIndex]);
  viewer = new PANOLENS.Viewer({
   container: imageContainer,
   autoRotate: true,
-  autoRotateSpeed: 0.5,
+  autoRotateSpeed: 1,
   controlBar: false,
 });
 
@@ -35,3 +35,24 @@ function clearBox() {
   } 
 } 
 
+
+//Date Setup
+
+var date = new Date();
+
+var day = date.getDate(),
+    month = date.getMonth() + 1,
+    year = date.getFullYear(),
+    hour = date.getHours(),
+    min  = date.getMinutes();
+
+month = (month < 10 ? "0" : "") + month;
+day = (day < 10 ? "0" : "") + day;
+hour = (hour < 10 ? "0" : "") + hour;
+min = (min < 10 ? "0" : "") + min;
+
+var today = year + "-" + month + "-" + day,
+    displayTime = hour + ":" + min; 
+
+document.getElementById('f-date').value = today;      
+document.getElementById("t-date").value = today;
